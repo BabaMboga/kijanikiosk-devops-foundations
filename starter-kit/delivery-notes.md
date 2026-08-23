@@ -11,3 +11,5 @@ Problems should be identified as early as possible rather than after changes rea
 ## Learning
 
 At the end of each sprint, the team should review what worked well, what caused delays, and what could be improved. For example, if large pull requests caused slow reviews this sprint, we could break future work into smaller changes. We should also use failed CI checks, bugs, and review feedback to improve our development process. Applying these lessons in the next sprint creates a continuous cycle of improvement rather than repeating the same problems.
+
+Idea → Branch → Code → Review → Merge → Delivery
