@@ -90,4 +90,4 @@ Least privilege means granting the **minimum access required to perform a specif
 1. **Task-first design** — permissions were derived from a specific, named task (read/write product images), not copied from a general-purpose template.
 2. **Resource scoping** — the policy targets one named bucket via its ARN, not a wildcard `*` that would apply account-wide.
 3. **Action scoping** — only the two actions actually used by the application (`GetObject`, `PutObject`) are allowed; every other action, including seemingly "harmless" ones like listing buckets, is left out by default.
-If KijaniKiosk grows and the backend needs new capabilities (e.g. generating thumbnails, which might need `s3:DeleteObject` for cleanup), that permission should be added deliberately and reviewed at that time — not granted upfront "in case it's needed later." 
+If KijaniKiosk grows and the backend needs new capabilities (e.g. generating thumbnails, which might need `s3:DeleteObject` for cleanup), that permission should be added deliberately and reviewed at that time — not granted upfront "in case it's needed later."
